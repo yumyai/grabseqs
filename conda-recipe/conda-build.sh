@@ -4,4 +4,4 @@
 # been run--otherwise just upload manually per the 
 # instructions from conda-build.
 
-conda-build -c conda-forge -c bioconda -c louiejtaylor grabseqs
+conda-build -c conda-forge -c bioconda -c yumyai grabseqs

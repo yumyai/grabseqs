@@ -6,7 +6,9 @@ package:
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
+  git_url: https://github.com/yumyai/grabseqs.git
+  git_rev: HEAD
+  git_depth: 1 # (Defaults to -1/not shallow)
 
 build:
   number: 0
@@ -36,11 +38,11 @@ test:
     - grabseqs --help
 
 about:
-  home: "https://github.com/louiejtaylor/grabseqs"
+  home: "https://github.com/yumyai/grabseqs"
   license: MIT
   license_family: MIT
   summary: "Easily download reads from next-gen sequencing repositories like NCBI SRA"
 
 extra:
   recipe-maintainers:
-    - louiejtaylor
+    - yumyai
